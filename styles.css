@@ -1,1 +1,67 @@
 /* Your CSS code here. */
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+header {
+    background-color: #e5e5e5;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation bar styling */
+nav {
+    background-color: black;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main and aside container */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+/* Main section styling */
+main {
+    flex: 3;
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin-right: 10px;
+}
+
+/* Sidebar styling */
+aside {
+    flex: 1;
+    background-color: lightgray;
+    padding: 20px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #e5e5e5;
+    padding: 20px;
+    text-align: center;
+}
