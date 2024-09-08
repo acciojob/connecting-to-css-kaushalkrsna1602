@@ -1,21 +1,15 @@
 describe('Nav bar CSS Test', () => {
-  it('should have the correct background-color, padding, and color', () => {
+  it('should have the correct background-color, padding, and text color', () => {
     // Visit the base URL
     cy.visit(baseUrl);
 
-    // Check that the background-color of the nav is black
-    cy.get("nav").invoke("css", "background-color").then(e => {
-      expect(e).to.eq("rgb(0, 0, 0)"); // Black background
-    });
+    // Check the background color of the nav is black
+    cy.get('nav').should('have.css', 'background-color', 'rgb(0, 0, 0)');
 
-    // Check that the padding of the nav is 10px
-    cy.get("nav").invoke("css", "padding").then(e => {
-      expect(e).to.eq("10px");
-    });
+    // Check the padding of the nav is 10px
+    cy.get('nav').should('have.css', 'padding', '10px');
 
-    // Check that the text color of the nav is white
-    cy.get("nav").invoke("css", "color").then(e => {
-      expect(e).to.eq("rgb(255, 255, 255)"); // White text
-    });
+    // Check the text color (font color) of the nav is white
+    cy.get('nav').should('have.css', 'color', 'rgb(255, 255, 255)');
   });
 });
