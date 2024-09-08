@@ -1,0 +1,4 @@
+{
+  "testRepo": "connecting-to-css-solution",
+  "pathToFile": "cypress/integration/tests/test.spec.js"
+}
