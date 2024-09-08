@@ -10,6 +10,6 @@ describe('Nav bar CSS Test', () => {
     cy.get('nav').should('have.css', 'padding', '10px');
 
     // Check the text color (font color) of the nav is white
-    cy.get('nav').should('have.css', 'color', 'rgb(255, 255, 255)');
+    cy.get('nav a').should('have.css', 'color', 'rgb(255, 255, 255)');
   });
 });
